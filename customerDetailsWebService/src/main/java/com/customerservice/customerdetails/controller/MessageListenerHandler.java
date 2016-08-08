@@ -23,6 +23,7 @@ import com.google.gson.Gson;
 		public static String loadListener() {
 			
 			logger.info("hi i am listener");
+			System.out.println("in controller");
 			
 			TestListener.loadListener();
 			
