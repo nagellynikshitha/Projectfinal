@@ -10,7 +10,7 @@ import org.springframework.context.support.GenericXmlApplicationContext;
 public class TestListener {
 	public static void loadListener() {
 		GenericXmlApplicationContext ctx = new GenericXmlApplicationContext();
-		ctx.load("../com/customerservice/customerdetails/jms/applicationContext.xml");
+		ctx.load("classpath:jmsListner.xml");
 		ctx.refresh();
 System.out.println("hi,loaded listener");
 		while (true) {
